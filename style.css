@@ -7,10 +7,17 @@ body{
     position: relative;
 }
 
+header{
+    width: 20%;
+    height: 100vh;
+}
+
 .side-sec{
     height: 100vh;
-    width: 20%;
+    background-color: blue;
 }
+
+
 
 main{
     width: 80%;
@@ -32,17 +39,11 @@ main{
     background-color: rgb(134, 8, 8);
 }
 
-.left-bar{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(8, 31, 134);
-}
-
 @media (max-width: 1004px){
     .right-bar{
         position: absolute;
         width: 0px;
-        display: none;
+        visibility: hidden;
     }
 
     body{
@@ -64,7 +65,9 @@ main{
     header{
         width: 10%;
     }
-    
+    body{
+        justify-content: center;
+    }
   
 }
 
@@ -73,23 +76,28 @@ main{
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 50px);
+        justify-content: start;
     }
+
     header{
-        margin-top: 10px;
-        width: calc(100% - 100px) ;
+        width: 100%;
         height: 50px;
     }
+
+    .main{
+        width: 100vw;
+    }
+
+   .content{
+        width: 100vw;
+   }
 
     .side-sec{
         height: 50px;
         width: 100%;
     }
-    
-    main{
-        width: calc(100% -200px);
-        height: calc(100% - 200px);
-    }
+
 }
 
 
