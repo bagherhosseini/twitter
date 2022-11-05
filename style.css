@@ -4,39 +4,133 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 header{
-    width: 20%;
-    height: 100vh;
+    width: 100%;
+    max-width: 251px;
+    height: 100%;
 }
 
-.side-sec{
-    height: 100vh;
+main{
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    max-width: 990px;
+    padding-bottom: 2px;
+}
+
+.letf-bar-access{
+    position: fixed;
+    width: 100%;
+    max-width: 251px;
+}
+
+.menu{
+    width: 100%;
+    max-width: 251px;
     background-color: blue;
 }
 
+.menu li{
+    list-style-type: none;
+    height: 58px;
+}
 
-
-main{
-    width: 80%;
-    height: 100%;
-    display: flex;
+.menu li:hover{
+    cursor: pointer;
 }
 
 .right-bar{
-    height: 100%;
-    width: 25%;
-    background-color: aquamarine;
+    max-width: 350px;
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+
+svg {
+    height: 24.5px;
+    width: 24.5px;
+}
+
+.tweet-btn{
+    width: 225px;
+    border-radius: 25%;
+}
+
+.text-span{
+    font-weight:700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.r-yyyyoo{
+    margin-top: -9px;
 }
 
 .content{
     border-right: 5px solid black;
     border-left: 5px solid black;
-    height: 100%;
     width: 75%;
     background-color: rgb(134, 8, 8);
+}
+
+#checkbox-left-bar{
+    display: none;
+}
+
+.label-left-bar{
+    display: none;
+}
+
+.sparkle-a{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.home-span{
+    display: none;
+}
+
+@media (max-width: 1281px){
+    header{
+        width: 100%;
+        max-width: 88px;
+        height: 100%;
+    }
+
+    body{
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .letf-bar-access{
+        position: fixed;
+        width: 100%;
+        max-width: 88px;
+    }
+
+    .right-bar{
+        max-width: 350px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 1094px) {
+    .right-bar{
+        max-width: 290px;
+    }
 }
 
 @media (max-width: 1004px){
@@ -45,31 +139,35 @@ main{
         width: 0px;
         visibility: hidden;
     }
+    
+    header{
+        width: 100%;
+        max-width: 88px;
+        height: 100%;
+    }
+
+    .letf-bar-access{
+        position: fixed;
+        width: 100%;
+        max-width: 88px;
+    }
 
     body{
         display: flex;
         justify-content: center;
+        overflow-x: hidden;
     }
 
     .content{
         width: 100%;
     }
     
-    header{
-        width: 20%;
+    main{
+        width: 100%;
+        max-width: 600px;
     }
-    
 }
 
-@media (max-width: 1281px){
-    header{
-        width: 10%;
-    }
-    body{
-        justify-content: center;
-    }
-  
-}
 
 @media (max-width: 499px){
     body{
@@ -77,26 +175,86 @@ main{
         flex-wrap: wrap;
         width: 100vw;
         height: calc(100vh - 50px);
-        justify-content: start;
+        justify-content: center;
+        margin: 0;
+        overflow-x: hidden;
     }
 
     header{
         width: 100%;
         height: 50px;
+        max-width: 490px;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        padding: 13px;
+    }
+
+    .home-span{
+        display: block;
+    }
+
+    .sparkle-a{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .top-access-btn{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: white;
+        text-align: center;
+        align-items: center;
+    }
+
+    .letf-bar-access{
+        width: 100%;
+        max-width: 499px;
+    }
+
+    .left-bar{
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        display: none;
+        background-color: rgba(91, 112, 131, 0.4);
+    }
+
+    .menu{
+        width: 280px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: chartreuse;
+    }
+
+    .label-left-bar{
+        display: block;
+    }    
+
+    #checkbox-left-bar:checked ~ .left-bar{
+        display: block;
+    }
+
+    .link{
+        width: 100%;
+        position: sticky;
     }
 
     .main{
-        width: 100vw;
+        margin-top: 50px;
+        width: 100%;
     }
 
    .content{
-        width: 100vw;
+        width: 100%;
    }
 
-    .side-sec{
-        height: 50px;
-        width: 100%;
-    }
+   
 
 }
 
