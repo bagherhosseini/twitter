@@ -8,8 +8,15 @@
 svg {
     height: 24.5px;
     width: 24.5px;
+    
 }
 
 .r-yyyyoo{
-    margin-top: -9px;
+    margin-top: 0;
+    justify-content: center;
+    color: #fff;
+}
+
+.input-search{
+    outline: none;
 }
