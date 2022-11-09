@@ -114,7 +114,12 @@ header .r-yyyyoo{
 
 .content{
     width: 75%;
+    height: fit-content;
     margin-top: 56px;
+}
+
+.ok{
+    height: fit-content;
 }
 
 .label-left-bar{
@@ -132,7 +137,6 @@ header .r-yyyyoo{
 
 .content-div{
     max-width: 640px;
-    height: 1600px;
 }
 
 
@@ -404,6 +408,17 @@ header .r-yyyyoo{
     height: 100vh;
 }
 
+.trend-country-span{
+    color: #61676A;
+    font-size: 14px;
+    
+}
+.search-bar-top{
+    z-index: 1000; 
+    width: 100%; 
+    max-width:335px;
+}
+
 
 @media (max-width: 1281px){
     header{
@@ -505,6 +520,10 @@ header .r-yyyyoo{
 
     .right-bar-content{
         width: 275px;
+    }
+
+    .search-bar-top{
+        max-width: 275px;
     }
 }
 
