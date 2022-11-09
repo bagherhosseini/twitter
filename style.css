@@ -260,6 +260,9 @@ header .r-yyyyoo{
     margin-left: 12px;
 }
 
+.tweet-div-for-svg{
+    display: none;
+}
 
 /*content*/
 
