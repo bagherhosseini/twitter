@@ -1,22 +1,51 @@
-.right-bar{
-    width: 100%;
-    max-width: 350px;
-    height: 800px;
-    background-color: black;
+.right-bar {
+  width: 100%;
+  max-width: 350px;
+  height: 800px;
+  background-color: black;
 }
 
 svg {
-    height: 24.5px;
-    width: 24.5px;
-    
+  height: 24.5px;
+  width: 24.5px;
 }
 
-.r-yyyyoo{
-    margin-top: 0;
-    justify-content: center;
-    color: #fff;
+.r-yyyyoo {
+  margin-top: 0;
+  justify-content: center;
+  color: white;
 }
 
-.input-search{
-    outline: none;
+.input-search {
+  outline: none;
 }
+
+.grey-box,
+.list-group > * {
+  background-color: #16181c !important;
+}
+
+.djurgården-trend:hover,
+.elon-trend:hover,
+.spootify-trend:hover,
+.ryssland-trend:hover,
+.taylor-trend:hover,
+.nackademin-trend:hover,
+.k-pop-trend:hover,
+.aftonbladet-trend:hover,
+.avanza-trend:hover,
+.svt-trend:hover,
+.show-trend:hover {
+  opacity: 0.8;
+}
+
+.link-show {
+  text-decoration: none;
+}
+
+.show-color{
+    color: rgb(30, 144, 255) !important;
+
+}
+
+
