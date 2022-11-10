@@ -139,6 +139,22 @@ header .r-yyyyoo{
     max-width: 640px;
 }
 
+.container{
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.container-tweets{
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top:none;
+}
+
+.border-25 { border-color: rgba(255, 255, 255, 0.25); }
 
 .close-mbleftbar-div{
     height: 100vh;
@@ -273,7 +289,7 @@ header .r-yyyyoo{
 
 .top-content{
     width: 100%;
-    max-width: 637px;
+    max-width: 640px;
     height: 53px;
     backdrop-filter:blur(20px);
     display: flex;
@@ -418,7 +434,6 @@ header .r-yyyyoo{
     width: 100%; 
     max-width:335px;
 }
-
 
 @media (max-width: 1281px){
     header{
@@ -576,7 +591,6 @@ header .r-yyyyoo{
     }
 }
 
-
 @media (max-width: 499px){
 
     ::-webkit-scrollbar {
@@ -676,6 +690,10 @@ header .r-yyyyoo{
 
     .top-of-content{
         display: none;
+    }
+
+    .container{
+        border: none;
     }
 }
 
